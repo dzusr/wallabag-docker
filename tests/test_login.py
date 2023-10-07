@@ -52,6 +52,7 @@ def test_accessing_login_page(wallabag_service):
     assert r.status_code == 200
     assert 'Log in' in r.text
     assert 'Password' in r.text
+    assert 'Register' in r.text
     assert 'Username' in r.text
 
 
